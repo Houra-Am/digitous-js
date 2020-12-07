@@ -28,3 +28,20 @@ console.log(letters);
 var age = "34";
 var template = `I'm ${age} years old`;
 console.log(template);
+
+var cat = "Cira";
+console.log(cat.charAt(3));
+
+var ciraBreed = "Persian";
+var ledaBreed = "British";
+if (ciraBreed < ledaBreed) {
+    console.log(ciraBreed + ' is cuter than ' + ledaBreed)
+} else if (ciraBreed > ledaBreed) {
+    console.log(ciraBreed + ' is lazier than ' + ledaBreed)
+} else {
+    console.log(ciraBreed + ' and ' + ledaBreed + ' are both cute!')
+}
+
+var changed = "bonjour";
+var newStr = changed.replace(/o/g, 'a');
+console.log(newStr);
