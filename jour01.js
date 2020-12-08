@@ -29,6 +29,10 @@ var age = "34";
 var template = `I'm ${age} years old`;
 console.log(template);
 
+var food = "Croissant is meh";
+food = food.replace("meh", "so good");
+console.log(food);
+
 var cat = "Cira";
 console.log(cat.charAt(3));
 
