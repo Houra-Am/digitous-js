@@ -43,10 +43,41 @@ if (score >= limit) {
 } else {
     console.log("Oh nooo...")
 }
+
 var limit = 64;
 var score = 50;
 if (score >= limit) {
     console.log("Ok good !")
 } else {
     console.log("Oh nooo...")
+}
+
+
+//ex.07//
+var password = "azerty";
+if (password.length > 5) {
+    console.log("The password is secure!")
+}
+
+//ex.08//
+var limit = 64;
+var score = 50;
+var password = "azerty";
+if (score >= limit && password.length > 5) {
+    console.log("Everything is good!")
+} else if (score >= limit || password.length < 5) {
+    console.log("Something is good!")
+} else {
+    console.log("Nothing is good!")
+}
+
+var limit = 64;
+var score = 50;
+var password = "azerty";
+if (score >= limit && password.length > 5) {
+    console.log("Everything is good!")
+} else if (score >= limit || password.length > 5) {
+    console.log("Something is good!")
+} else {
+    console.log("Nothing is good!")
 }
