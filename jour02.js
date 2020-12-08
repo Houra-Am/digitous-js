@@ -52,7 +52,6 @@ if (score >= limit) {
     console.log("Oh nooo...")
 }
 
-
 //ex.07//
 var password = "azerty";
 if (password.length > 5) {
@@ -80,4 +79,140 @@ if (score >= limit && password.length > 5) {
     console.log("Something is good!")
 } else {
     console.log("Nothing is good!")
+}
+
+var limit = 30;
+var score = 50;
+var password = "azerty";
+if (score >= limit && password.length > 5) {
+    console.log("Everything is good!")
+} else if (score >= limit || password.length > 5) {
+    console.log("Something is good!")
+} else {
+    console.log("Nothing is good!")
+}
+
+//Bonus I //
+var random = 4;
+if (random === 6) {
+    console.log("Yes I won!")
+} else {
+    console.log("So close...")
+}
+
+//Bonus II.I //
+var month = "January";
+switch (month) {
+    case "March":
+    case "April":
+    case "May":
+        console.log("Spring");
+        break;
+    case "June":
+    case "July":
+    case "August":
+        console.log("Summer");
+        break;
+    case "September":
+    case "October":
+    case "November":
+        console.log("Fall");
+        break;
+    case "December":
+    case "January":
+    case "February":
+        console.log("Winter");
+        break;
+    default:
+        console.log("That's not a month!")
+}
+
+//Bonus II.II //
+var month = "July";
+switch (month) {
+    case "March":
+    case "April":
+    case "May":
+        console.log("Spring");
+        break;
+    case "June":
+    case "July":
+    case "August":
+        console.log("Summer");
+        break;
+    case "September":
+    case "October":
+    case "November":
+        console.log("Fall");
+        break;
+    case "December":
+    case "January":
+    case "February":
+        console.log("Winter");
+        break;
+    default:
+        console.log("That's not a month!")
+}
+
+//Bonus II.III //
+var month = "October";
+switch (month) {
+    case "March":
+    case "April":
+    case "May":
+        console.log("Spring");
+        break;
+    case "June":
+    case "July":
+    case "August":
+        console.log("Summer");
+        break;
+    case "September":
+    case "October":
+    case "November":
+        console.log("Fall");
+        break;
+    case "December":
+    case "January":
+    case "February":
+        console.log("Winter");
+        break;
+    default:
+        console.log("That's not a month!")
+}
+
+//Bonus II.IV //
+var month = "December";
+switch (month) {
+    case "March":
+    case "April":
+    case "May":
+        console.log("Spring");
+        break;
+    case "June":
+    case "July":
+    case "August":
+        console.log("Summer");
+        break;
+    case "September":
+    case "October":
+    case "November":
+        console.log("Fall");
+        break;
+    case "December":
+    case "January":
+    case "February":
+        console.log("Winter");
+        break;
+    default:
+        console.log("That's not a month!")
+}
+
+
+//Bonus III //
+var roundedNumber = 3.6;
+if () {
+
+} else {
+
 }
