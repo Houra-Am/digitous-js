@@ -23,3 +23,23 @@ numbers.reverse();
 console.log(numbers);
 
 // 05 - Boucle
+
+var total = 0;
+var limit = 10;
+for (var i = 1; i <= limit; i++) {
+    total += i;
+    console.log("total= ", total);
+}
+console.log("result= " + total);
+
+
+
+// 06 - Reverse
+
+var sentence = "Hello Konexio !";
+var reversedSentence = "";
+for (var i = sentence.length - 1; i >= 0; i--) {
+    reversedSentence += sentence[i];
+
+}
+console.log(reversedSentence);
