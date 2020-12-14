@@ -45,6 +45,35 @@ function compare(num1, num2) {
 compare(645, 883)
 
 // 05 - Add Up
-function addUp(num) {
+var i = 0;
+var sum = 0;
 
+function addUp(num) {
+    for (i = 0; i <= 12; i++) {
+        sum = sum + i;
+    }
+}
+addUp(12)
+console.log(sum)
+
+
+// 06 - Time
+
+function format(num) {
+    var hrs = Math.floor(num / 3600);
+    var mins = Math.floor((num % 3600) / 60);
+    var secs = Math.floor(num % 60);
+    console.log(`${hrs}:${mins}:${secs}`)
+}
+format(3700)
+
+// Bonus 01
+var min = 0;
+var max = 127;
+i = 0;
+
+function generatePassword(num) {
+    var randomPass = Math.floor(Math.random() * (max - min + 1) + min);
+    for (i = 0; i < )
+        if (i >= 'a' && i <= 'z')
 }
