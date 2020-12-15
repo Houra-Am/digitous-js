@@ -59,21 +59,31 @@ console.log(sum)
 
 // 06 - Time
 
-function format(num) {
+/*function format(num) {
     var hrs = Math.floor(num / 3600);
     var mins = Math.floor((num % 3600) / 60);
     var secs = Math.floor(num % 60);
     console.log(`${hrs}:${mins}:${secs}`)
 }
-format(3700)
+format(3700)*/
 
 // Bonus 01
-var min = 0;
-var max = 127;
-i = 0;
 
 function generatePassword(num) {
-    var randomPass = Math.floor(Math.random() * (max - min + 1) + min);
-    for (i = 0; i < )
-        if (i >= 'a' && i <= 'z')
+    var passWord = "";
+    var characters = "abcdefghijklmnopqrstuvwxyz";
+    var min = 0;
+    var passwordLength = characters.length;
+
+    for (i = 0; i < num; i++) {
+        var randomPass = characters.charAt(Math.floor(Math.random() * (passwordLength - min + 1) + min));
+        passWord = passWord + randomPass;
+        //passWord.toLocaleUpperCase();
+    }
+    return passWord.toLocaleUpperCase();
+}
+
+console.log(generatePassword(2))
+if (generatePassword() < 6 || generatePassword() > 12) {
+    console.log("error")
 }
