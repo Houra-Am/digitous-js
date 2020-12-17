@@ -32,3 +32,25 @@ function countEach(inputStr) {
 
 countEach("xxxoooox");
 countEach("xox")
+
+//## 03 - Palindrome
+
+/* - Créez une fonction `checkPal` qui reçoit une string en paramètre
+- La fonction retourne "Palindrome !" si le mot se lit dans les deux sens, sinon elle retourne "Nope"
+- Vérifiez que vous obtenez un positif avec l'argument "racecar" mais pas avec "laptop"
+*/
+
+function checkPal(str) {
+    var lowStr = str.toLowerCase();
+    var cleanStr = str.replace(/[\W_]/g, '');
+    var reverseStr = cleanStr.split('').reverse().join('');
+    //return cleanStr === reverseStr;
+    if (cleanStr === reverseStr) {
+        console.log("Palindrome !")
+    } else {
+        console.log("Nope")
+    }
+}
+
+checkPal("racecar");
+checkPal("laptop");
