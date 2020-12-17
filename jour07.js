@@ -54,3 +54,25 @@ function checkPal(str) {
 
 checkPal("racecar");
 checkPal("laptop");
+
+// ## 04 - Swap
+/*
+- Créez une fonction `swap` qui reçoit une string en paramètre
+- La fonction retourne une string avec la casse inverse : une majuscule deviendra minuscule et vice-versa
+- Appelez votre fonction avec l'argument "Hello World" et vérifiez que vous obtenez "hELLO wORLD"
+*/
+
+function swap(newStr) {
+    var testStr = newStr;
+    var anyStr = '';
+    for (var i = 0; i < testStr.length; i++) {
+        if (/^[A-Z]/.test(testStr[i])) {
+            anyStr += testStr[i].toLowerCase();
+        } else {
+            anyStr += testStr[i].toUpperCase();
+        }
+    }
+    return anyStr;
+}
+
+console.log(swap("Hello World"));
