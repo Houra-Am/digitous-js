@@ -37,3 +37,13 @@ var shortNames = longNames.map(function(fullName) {
 });
 
 console.log(shortNames);
+
+
+// 04 - Filter Numbers
+
+var array = [1, "toto", 34, "javascript", 8];
+var numbers = array.filter(function(num) {
+    return typeof(num) === "number";
+});
+
+console.log(numbers);
