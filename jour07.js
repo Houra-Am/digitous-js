@@ -19,6 +19,7 @@ var double = array.map(function(number) {
 
 console.log(double);
 
+
 // 03 - Map Names
 
 var longNames = [{
@@ -47,3 +48,11 @@ var numbers = array.filter(function(num) {
 });
 
 console.log(numbers);
+
+// 05 - Filter Even
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+var even = numbers.filter(function(pairNum) {
+    return pairNum % 2 === 0;
+});
+console.log(even);
